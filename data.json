@@ -1,0 +1,134 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can guide you through library, book tracking, Articles and Research Papers", "Offering support for library resources, books, Articles and Research Papers"],
+     "context": [""]
+    },
+    {"tag": "guest visitor alumni library access",
+     "patterns": ["Can a guest use the library", "Can a community visitor use the library", "Can an alumni use the library", "How can a guest use the library", "How can a community visitor use the library?" ],
+     "responses": ["Yes! Guest can use the library resources by registering in the library register","Yes! Community visitor can use the library resources by registering in the library register"],
+     "context": [""]
+    },
+    {"tag": "guest visitor alumni wireless internet",
+     "patterns": ["Can a guest use the wireless", " Can a guest use the internet", "Can a community visitor use the wireless internet", "Can an alumni use the wireless internet", "How can a guest use the wireless internet" ],
+     "responses": ["Library wireless services can be used by maintaining the rules of the library","Library internet services can be used by maintaining the rules of the library"],
+     "context": [""]
+    },
+    {"tag": "how to know type of articles",
+     "patterns": ["How can I know if the article is quantitative or qualitative", "Help me to find the category of research articles", "how to know the type of articles?", "how to know types of articles", "is the article qualitative or quantitative?" ],
+     "responses": ["Articles are dividing based on the vaiours fleilds of the subjects", "Articles are dividing based on the various core departments of the subjects"],
+     "context": ["articles_category"]
+    },
+    {"tag": "articles_category",
+     "patterns": [],
+     "responses": ["Loading Articles category like research, applied sciences and field work"],
+     "context": [""]
+    },
+    {"tag": "book_search",
+     "patterns": ["Find me a book", "Find book", "List of book nearby", "Locate this book", "Search this book" ],
+     "responses": ["Please provide book name"],
+     "context": ["search_book_by_name"]
+    },
+    {"tag": "search_book_by_name",
+     "patterns": ["COA", "AOA", "CN"],
+     "responses": ["Loading book details Algorithms, Data Structure, Operating System, Computer networks and COA"],
+     "context": [""]
+    },
+    {"tag": "department books search",
+     "patterns": ["Lookup for Computer Engineering books", "Searching for Computer Engineering books", "I am searching for Computer Engineering books", "Computer Engineering books for students", "Looking up Computer Engineering books" ],
+     "responses": ["Please provide Subject or Author"],
+     "context": ["search_book_by_author"]
+    },
+    {"tag": "search_book_by_author",
+     "patterns": [],
+     "responses": ["Please provide subject type"],
+     "context": ["search_book_by_subject"]
+    },
+    {"tag": "search_book_by_subject",
+     "patterns": [],
+     "responses": ["Loading computer books based on Algorithms and Data Structure"],
+     "context": [""]
+    }
+    ,
+    {"tag": "search_book_by_subject",
+     "patterns": [],
+     "responses": ["Loading computer books based on Algorithms and Data Structure"],
+     "context": [""]
+    },
+    {"tag": "Physics",
+        "patterns": ["What are recommended books for physics","What are popular books for physics","popular books for physics"],
+        "responses": ["Engineering Physics, Malik and Singh, Tata Mc Graw Hill","Engineering Physics, Naidu, Pearson","Mechanics, Mathur, S.Chand Publishing","Classical Mechanics, Upadhyaya, Himalaya Publishing House","Classical Mechanics, G. Aruldhas, PHI","Engineering Physics, Gupta & Gaur, Dhanpat Rai","Quantum Mechanics, Ajay Ghatak S. Lokanathan, Trinity","Quantum Mechanics: A Text Book for undergraduates, Mahesh C Jain, TMH","Text Book of Ruantum Mechanics, M. Mathews &Venkatesan, TMH","Electromagnetic Theory, Prabir K. Basu & Hrishikesh Dhasmana, AneBooks","Fundamentals of Electromagnetic Theory, Khunita, PHI","A Text Book of Optics, Avadhanulu, S. Chand","Optics, Ajoy Ghatak, TMH","Modern Physics for Engineers, S.P. Taneja, R. Chand","The Physics of waves and Oscillations, N.K. Bajaj, TMH"],
+        "context": [""]
+    },
+    {"tag": "Chemistry",
+        "patterns": ["What are recommended books for Chemistry","What are popular books for Chemistry","popular books for Chemistry"],
+        "responses": ["Engineering Chemistry, Satyaprakash & Manisha Agrawal, Khanna Book Publishing, Delhi","A Text Book of Engg. Chemistry, Shashi Chawla, Dhanpat Rai & Co. (P) Ltd","Essentials of Physical Chemistry, Bahl&Tuli, S.Chand Publishing","Applied Chemistry, Sunita Rattan, Kataria","Engineering Chemistry, Baskar, Wiley","Engineering Chemistry – I, D. GrourKrishana, Vikas Publishing","Laboratory Manual Engg. Chemistry, Anupma Rajput, Dhanpat Rai & Co."],
+        "context": [""]
+    },
+    {"tag": "COMPUTER SCIENCE ENGINEERING",
+        "patterns": ["What are recommended books for COMPUTER SCIENCE ENGINEERING","What are popular books for COMPUTER SCIENCE ENGINEERING","popular books for COMPUTER SCIENCE ENGINEERING"],
+        "responses": ["Analog Electronics, L.K. Maheshwari, Laxmi Publications","Fundamentals of Data Structures, Sartaj Sahni, University Press","Digital Electronics, A. Anand Kumar, PHI",". Advanced Engineering Mathematics, Chandrika Prasad & Reena Garg, Khanna Book Publishing","Operating Systems, Ekta Walia, Khanna Publishing House, Delhi","Computer Fundamentals Architecture and Organization, B. Ram, New Age International ","Design & Analysis of Algorithms, S. Sridhar, Oxford",". Object Oriented Programming with C++, Balaguruswamy, TMH","Computer Networks, M. Dave, Cengage","Big Data & Hadoop, V.K. Jain, Khanna Publishing House","A classical approach to Artificial Intelligence, Munesh Chandra Trivedi, Khanna Publications","A concise introduction to software Engineering, Pankaj Jalote, Springer "],
+        "context": [""]
+    },
+    {"tag": "CHEMICAL ENGINEERING",
+        "patterns": ["What are recommended books for CHEMICAL ENGINEERING","What are popular books for CHEMICAL ENGINEERING","popular books for CHEMICAL ENGINEERING"],
+        "responses": ["An Introduction to Thermodynamics, Rao, John Wiley","Basic Principles and Calculations in Chemical Engineering, Himmelblau, Phi",". Mechanics of Materials, Punmia & Jain, Laxmi Publications","Engineering Chemistry, Satyaprakash & Manisha Agrawal, Khanna Book Publishing, Delhi"," A Text Book of Engg. Chemistry, Shashi Chawla, Dhanpat Rai & Co. (P) Ltd.",". Essentials of Physical Chemistry, Bahl & Tuli, S.Chand Publishing","Engineering Chemistry, Baskar, Wiley","Engineering Chemistry – I, D. Grour Krishana, Vikas Publishing","Laboratory Manual Engg. Chemistry, Anupma Rajput, Dhanpat Rai & Co.","Process Heat Transfer and Chemical Equipment Design, D.C.Sikdar, Khanna Publishing House",". Fluid Mechanics","Numerical Methods for Engineers Gupta Newage Publishers","Textbook of Environmental Studies Erach Bharucha University Press","Principles of Mass Transfer and Separation Processes B.K. Dutta PHI","Chemical Process Simulation Husain , Wiley Eastern India","Instrumentation and Process Control, D.C. Sikdar, Khanna Publishing House","Process Design of Equipments, Dawande, S.D., Central Techno, Nagpur","Energy Audit and Management, Teri Press","Energy Conservation, Diwan & Dwivedi, Pentagon Press","Non-Conventional Energy Resources, Chandra, Khanna Publishing House"," Outlines of Chemical and Petroleum Engineering Suryanaryana & Mahto Khanna Publishing "],
+        "context": [""]
+    },
+    {"tag": "MECHANICAL ENGINEERING",
+        "patterns": ["What are recommended books for MECHANICAL ENGINEERING","What are popular books for MECHANICAL ENGINEERING","popular books for MECHANICAL ENGINEERING"],
+        "responses": ["Engineering Physics, Garg & Singh","Mechanics, Mathur, S.Chand Publishing","Classical Mechanics, Upadhyaya, Himalaya Publishing House","Classical Mechanics, G. Aruldhas, PHI","Engineering Physics, Gupta & Gaur, Dhanpat Rai","Quantum Mechanics, Ajay Ghatak S. Lokanathan, Trinity","Quantum Mechanics: A Text Book for undergraduates, Mahesh C Jain, TMH","A text Book of Ruantum Mechanics, M. Mathews & K. Venkatesan, TMH","Electromagnetic Theory, Prabir K. Basu & Hrishikesh Dhasmana, Ane Books","Fundamentals of Electromagnetic Theory, Khunita, PHI","A Text Book of Optics, Avadhanulu, S. Chand","Optics, Ajoy Ghatak, TMH","Modern Physics for Engineers, S.P. Taneja, R. Chand","The Physics of waves and Oscillations, N.K. Bajaj, TMH"],
+        "context": [""]
+    },
+    {"tag": "ELECTRICAL ENGINEERING",
+        "patterns": ["What are recommended books for ELECTRICAL ENGINEERING ","What are popular books for ELECTRICAL ENGINEERING","popular books for ELECTRICAL ENGINEERING"],
+        "responses": ["Networks and Systems, Asfaq Hussain, Khanna Publishing House, Delhi","Networks and systems, D. Roy Choudhary, New Age International Publishers"," Problems and Solutions of Electrical Circuit Analysis R.K. Mehta & A.K. Mal CBS Publishers ","Electrical Machines - II GC Garg (ISBN: 978-93-86173-60-7) Khanna Book Publishing Delhi","The Performance & Design of Alternating Current Machines Say CBS Publishers"," Principle of Electrical Machine Design with Computer Programs S.K. Sen Oxford & IBH Electromagnetic Waves Shevgaonkar R McGraw Hill","Electrical Power Generation Transmission and distribution Singh PHI","Electrical Power Generation Tanmoy Deb Khanna Publishers","HVDC Power Transmission System K. R. Padiyar Wiley","Introduction to Fuzzy Logic using MATLAB S. N. Sivanandam S. Sumati & S. N. Deepa, Springer","High Voltage Engineering C.L. Wadhwa Newage Publishers","Introduction to Neural Networks using MATLAB Sivanandam TMH","Electric Drives N.K. De & P.K. Sen PHI","Fundamentals of Electrical Drives Dubey Narosa Publishing House "],
+        "context": [""]
+    },
+    {"tag": "office hours",
+        "patterns": ["What are office hours of library ","What are the working hours of library","Library working hours "],
+        "responses": ["The library working hours are from 9:30 am to 5:00 pm","The library office hours are from 9:30 am to 5:00 pm","Library working hours are from 9:30 am to 5:00 pm"],
+        "context": [""]
+    },   
+    {"tag": "wifi password",
+        "patterns": ["What is the password of library wifi "," What is the password of library internet "," What is the password of library wirless connection "],
+        "responses": ["Password of library wifi connection id sigce@123"],
+        "context": [""]
+    },  
+    {"tag": "number of books",
+        "patterns": ["How many books can be taken home at once","How many books can be taken at once for studying purpose"," How many books can be taken from the library at once"],
+        "responses": ["At once, 3 books will be provided"],
+        "context": [""]
+    },
+    {"tag": "not related to library ",
+        "patterns": [" "],
+        "responses": ["Please ask question related to library "],
+        "context": [""]
+    },
+    {"tag": "contactus",
+        "patterns": ["What are the contact details of library admin office ","What are the contact details of library admin","Library Contact details "],
+        "responses": ["The contact details of library are library@sigce.edu.in and 09999999999"],
+        "context": [""]
+    }
+]
+}
